@@ -5,7 +5,7 @@ dev {
 			localHomeDir = '/wildfly/wildfly-8.0.0.Final-dev'
 			containerId = 'wildfly8x'
 			hostname = 'localhost'
-			port = 8180
+			port = 8091
 			managementPort = 10090
 			context = 'web'
 			username = 'admin'
@@ -17,7 +17,7 @@ qa {
 			localHomeDir = '/wildfly/wildfly-8.0.0.Final-qa'
 			containerId = 'wildfly8x'
 			hostname = 'localhost'
-			port = 8280
+			port = 8092
 			managementPort = 10190
 			context = appName
 			username = 'admin'
@@ -29,7 +29,7 @@ perf {
 			localHomeDir = '/wildfly/wildfly-8.0.0.Final-perf'
 			containerId = 'wildfly8x'
 			hostname = 'localhost'
-			port = 8380
+			port = 8093
 			managementPort = 10290
 			context = appName
 			username = 'admin'
@@ -41,7 +41,7 @@ stage {
 			localHomeDir = '/wildfly/wildfly-8.0.0.Final-stage'
 			containerId = 'wildfly8x'
 			hostname = 'localhost'
-			port = 8480
+			port = 8094
 			context = appName
 			username = 'admin'
 			password = 'admin'
@@ -52,7 +52,7 @@ prod {
 			localHomeDir = '/wildfly/wildfly-8.0.0.Final-prod'
 			containerId = 'wildfly8x'
 			hostname = 'localhost'
-			port = 8580
+			port = 8095
 			context = appName
 			username = 'admin'
 			password = 'admin'
