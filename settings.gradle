@@ -1,0 +1,1 @@
+include 'ear' , ':ear:app-ejb', ':ear:app-vos' , ':ear:app-web'

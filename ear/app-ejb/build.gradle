@@ -1,0 +1,13 @@
+apply plugin: 'war'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	//Compile the model dependencies first
+	compile project(':ear:app-vos')
+    compile group: 'log4j', name: 'log4j', version: '1.2.15', ext: 'jar'
+	compile group: 'javax.ejb', name: 'javax.ejb-api', version: '3.2'
+}

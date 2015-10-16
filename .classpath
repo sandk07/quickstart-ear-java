@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="ear/app-ejb/src/main/java"/>
+	<classpathentry kind="src" path="ear/app-web/src/main/java"/>
+	<classpathentry kind="src" path="ear/app-vos/src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/jars/javaee-api-7.0.jar"/>
+	<classpathentry kind="lib" path="D:/jars/javax.servlet-api-3.0.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
