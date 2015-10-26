@@ -2,7 +2,7 @@ apply plugin: 'war'
 apply plugin: 'eclipse'
 
 repositories {
-    mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
