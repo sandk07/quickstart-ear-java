@@ -16,12 +16,12 @@ apply plugin:'jmeter'
 def performanceTestReportDir = file("$buildDir/reports/tests")
 
 jmeterRun.configure {
-
-  jmeterTestFiles = [ file("$rootDir/ear/src/test-performance/resources/jmeter/performanceTestPlan.jmx")]
-  jmeterPropertyFile = file("$rootDir/ear/src/test-performance/resources/jmeter/jmeter.properties")
-  jmeterUserProperties = ["host="+config.server.hostname,"port="+config.server.port,"path="+appName]
-
-  reportDir  = performanceTestReportDir
+    jmeterTestFiles = [ file("$rootDir/ear/src/test-performance/resources/com/wipro/test/EarPerformanceTestPlan.jmx")]
+    jmeterPropertyFile = file("$rootDir/ear/src/test-performance/resources/com/wipro/test/jmeter.properties")
+     // To get the host , port , path list values in jmx file use the ${__P(host)} , ${__P(port)}, ${__P(path)} in the domain , port and path in jmx file.
+    // remove proxy settings in jmx file.
+    jmeterUserProperties = ["host="+config.server.hostname,"port="+config.server.port,"path="+appName]
+  reportDir = performanceTestReportDir
 }
     
 project(':ear'){
